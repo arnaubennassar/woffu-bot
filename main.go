@@ -110,7 +110,7 @@ func main() {
 			fmt.Println("Free day, not checking in/out")
 		}
 		if inprecission < 0 {
-			time.Sleep(inprecission)
+			time.Sleep(inprecission * -1)
 		}
 		time.Sleep(time.Minute)
 	}
